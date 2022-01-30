@@ -5,15 +5,15 @@
     
     <body>
 		<img src="icon.png" height="40px" width="40px"> 
-    	<button id="AuthButton" style="font-size:60px;" onclick="myFunction()">Click to Finish Authorization</button>
-		<text id="AuthText" style="font-size:60px;" visibility="false">Authorization Complete!\nYou may close this window.</button>
+    	<button id="AuthButton" style="font-size:60px;" visibility="visible" onclick="myFunction()">Click to Finish Authorization</button>
+		<text id="AuthText" style="font-size:60px;" visibility="hidden">Authorization Complete!\nYou may close this window.</button>
     </body>
 
     <script>
         function myFunction() {
 			window.open("com.musicslayer.cryptobuddy://oauth" + window.location.search, "_self")
-			document.getElementById("AuthButton").visibility="false"
-			document.getElementById("AuthText").visibility="true"
+			document.getElementById("AuthButton").visibility="hidden"
+			document.getElementById("AuthText").visibility="visible"
         }
     </script>
 </html>
